@@ -2,6 +2,7 @@ package org.test;
 
 import java.util.Map;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,7 +48,7 @@ public class BaseClass {
 		driver.findElement(By.name("telephoneno")).sendKeys(phone);
 		driver.findElement(By.name("emailid")).sendKeys(email);
 		driver.findElement(By.name("password")).sendKeys(pass);
-		driver.findElement(By.xpath("//input[@value='Submit']")).click();
+		
 	}
 	@When("^The user submits the form$")
 	public void the_user_submits_the_form() {
@@ -58,13 +59,13 @@ public class BaseClass {
 	@Then("^The user should see success page$")
 	public void the_user_should_see_success_page() {
 		String successOutput=driver.findElement(By.xpath("//p[@class='heading3']")).getText();
-		Assert.assertEquals(successOutput,"Customer Registered Successfully!!!");
+		Assert.assertEquals("Customer Registered Successfully!!!",successOutput);
 		driver.quit();
 	}
 	@Then("^The user should see the alert message$")
 	public void the_user_should_see_alert_message() {
 		String alertMessage = driver.switchTo().alert().getText();
-        Assert.assertEquals(alertMessage,"please fill all fields");
+        Assert.assertEquals("please fill all fields",alertMessage);
         driver.switchTo().alert().accept();
         driver.quit();
         }

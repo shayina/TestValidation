@@ -11,7 +11,7 @@ Feature: To test edit customer functionality
     And The user navigate to edit customer page 
         |custId|535|		
     When The user edits the customer detail
-    |state|Karnataka|
+    |state|Kerala|
     And The user submits the form
     Then The user should see update successful page
     

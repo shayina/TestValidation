@@ -14,6 +14,6 @@ Feature: To test add new customer functionality
     Then The user should see success page
 
     Examples: 
-      |customerName       | gender  |DOB        |   address          | city      | state        | PIN     | phone      | email               | pass   |
-      |shaysh             | female  |4/3/1990   |raju nagr east st | chethpet    | taminadu     | 603232  | 2254456797 | wedqdgs@gmail.com   | qwerty | 
+      |customerName       | gender  |DOB        |   address              | city       | state        | PIN     | phone      | email               | pass   |
+      |alfarisha          | female  |1/9/1990   |raju nagar west colony  | Vayanad    | Kerala       | 653905  | 9994456790 | vabcdjk@gmail.com   | qwerty | 
       

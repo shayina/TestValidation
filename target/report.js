@@ -78,15 +78,15 @@ formatter.examples({
     },
     {
       "cells": [
-        "shaysha",
+        "alshwyisha",
         "female",
-        "4/5/1990",
-        "jothpu nagr east st",
-        "chengalpet",
-        "tamilnadu",
-        "603532",
-        "2234456797",
-        "wedgs@gmail.com",
+        "9/9/1989",
+        "raju nagar west stret",
+        "Karoor",
+        "Tamil nadu",
+        "653205",
+        "9994456797",
+        "vfdtdjk@gmail.com",
         "qwerty"
       ]
     }
@@ -150,7 +150,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user enters the customer details\"shaysha\",\"female\",\"4/5/1990\",\"jothpu nagr east st\",\"chengalpet\",\"tamilnadu\",\"603532\",\"2234456797\",\"wedgs@gmail.com\"and\"qwerty\"",
+  "name": "The user enters the customer details\"alshwyisha\",\"female\",\"9/9/1989\",\"raju nagar west stret\",\"Karoor\",\"Tamil nadu\",\"653205\",\"9994456797\",\"vfdtdjk@gmail.com\"and\"qwerty\"",
   "keyword": "When "
 });
 formatter.match({
@@ -167,8 +167,7 @@ formatter.match({
   "location": "BaseClass.the_user_submits_the_form()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@value\u003d\u0027Submit\u0027]\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:13:22.693Z\u0027\nSystem info: host: \u0027SHAYINALMAS\u0027, ip: \u0027100.100.103.220\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\SHABANA\\AppData\\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65107}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}\nSession ID: f6387092c6f218da2826787eb1b12c68\n*** Element info: {Using\u003dxpath, value\u003d//input[@value\u003d\u0027Submit\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.test.BaseClass.the_user_submits_the_form(BaseClass.java:54)\r\n\tat ✽.The user submits the form(src/org/test/CustomerRegistration.feature:13)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "The user should see success page",
@@ -178,6 +177,746 @@ formatter.match({
   "location": "BaseClass.the_user_should_see_success_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.uri("src/org/test/DeleteCustomer.feature");
+formatter.feature({
+  "name": "To test delete customer functionality",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@deleteCustomer"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To delete a customer",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@deleteCustomer"
+    },
+    {
+      "name": "@removeCustomer"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to delete customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_delete_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user enters the customer id",
+  "rows": [
+    {
+      "cells": [
+        "custId",
+        "50605"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_enters_the_customer_id(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see customer deleted message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_see_customer_deleted_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/org/test/EditCustomer.feature");
+formatter.feature({
+  "name": "To test edit customer functionality",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@editCustomer"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To edit customer detail",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@editCustomer"
+    },
+    {
+      "name": "@editPhoneNo"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to edit customer page",
+  "rows": [
+    {
+      "cells": [
+        "custId",
+        "535"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_edit_customer_page(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user edits the customer detail",
+  "rows": [
+    {
+      "cells": [
+        "state",
+        "Andhra"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_edits_the_customer_detail(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see update successful page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_see_update_successful_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("src/org/test/Validation.feature");
+formatter.feature({
+  "name": "To test validations in new customer functionality",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@validateNewCustomer"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To Test field validations in add new customers page",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@validateNewCustomer"
+    },
+    {
+      "name": "@fieldValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_new_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user submits the form",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_submits_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see the alert message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_see_alert_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "To Test number validations in add new customers page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@numberValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "keyword": "And ",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "The user enters number in name field\"\u003ccustomerName\u003e\",\"\u003ccity\u003e\"and\"\u003cstate\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "The user should see number validation message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "customerName",
+        "city",
+        "state"
+      ]
+    },
+    {
+      "cells": [
+        "1234",
+        "23445",
+        "54327"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To Test number validations in add new customers page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@validateNewCustomer"
+    },
+    {
+      "name": "@numberValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_new_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user enters number in name field\"1234\",\"23445\"and\"54327\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_enters_number_in_name_field_and(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see number validation message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_number_validation_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "To test character validation in add new customer page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@characterValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "keyword": "And ",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "The user enters characters in fields\"\u003cpinno\u003e\",\"\u003cphone\u003e\"and\"\u003cemail\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "The user should see character validation message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "pinno",
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        "asfgdr",
+        "asdhj",
+        "esrty"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To test character validation in add new customer page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@validateNewCustomer"
+    },
+    {
+      "name": "@characterValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_new_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user enters characters in fields\"asfgdr\",\"asdhj\"and\"esrty\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_enters_characters_in_fields_and(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see character validation message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_see_character_validation_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "To test special character validation in add new customer page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@specialCharacterValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "keyword": "And ",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "The user enters special characters in name field\"\u003ccustomerName\u003e\",\"\u003ccity\u003e\",\"\u003cstate\u003e\"\"\u003cpinno\u003e\",\"\u003cphone\u003e\"and\"\u003cemail\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "The user should see special character validation message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "customername",
+        "city",
+        "state",
+        "pinno",
+        "phone",
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        ");#$%^",
+        "^#(*\u0026",
+        "(^%",
+        "*(*\u0026\u003e,",
+        ".,/;\u0027",
+        "+!~\u003e,"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "To test special character validation in add new customer page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@validateNewCustomer"
+    },
+    {
+      "name": "@specialCharacterValidation"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user is in guru homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "BaseClass.the_user_is_in_guru_homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user logged in as manager",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "mngr154578"
+      ]
+    },
+    {
+      "cells": [
+        "password",
+        "ysejYsY"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_logged_in_as_manager(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user navigate to new customer page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "BaseClass.the_user_navigate_to_new_customer_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user enters special characters in name field\"\u003ccustomerName\u003e\",\"^#(*\u0026\",\"(^%\"\"*(*\u0026\u003e,\",\".,/;\u0027\"and\"+!~\u003e,\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BaseClass.the_user_enters_number_in_name_field_and(String,String,String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should see special character validation message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BaseClass.the_user_should_see_special_character_validation_message()"
+});
+formatter.result({
+  "status": "passed"
 });
 });

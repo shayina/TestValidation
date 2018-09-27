@@ -10,7 +10,7 @@ Feature: To test delete customer functionality
 				|password|ysejYsY   |  
     And The user navigate to delete customer page 	
     When The user enters the customer id
-    |custId|71629|
+    |custId|42904|
     And The user submits the form
     Then The user should see customer deleted message
     

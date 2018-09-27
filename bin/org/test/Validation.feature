@@ -22,7 +22,7 @@ Feature: To test validations in new customer functionality
     When The user enters number in name field"<customerName>","<city>"and"<state>"		
     Then The user should see number validation message
     Examples:
-    |customername|city |state|
+    |customerName|city |state|
 		|1234        |23445|54327|
     
    @characterValidation 
@@ -49,7 +49,7 @@ Feature: To test validations in new customer functionality
     Then The user should see special character validation message
     Examples:
     |customername|city   |state |pinno |phone  |email|
-		|)34#$%^     |3^#(*&8|31(^%4|*(*&>,|.,/;'  |4+!~>,|		
+		|);#$%^      |^#(*&  |(^%   |*(*&>,|.,/;'  |+!~>,|		
       
     
     

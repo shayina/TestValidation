@@ -1,6 +1,6 @@
 #Author: ShayinAlmas
-@addCustomer
-Feature: To test new customer functionality
+ @validateNewCustomer
+Feature: To test validations in new customer functionality
   
   @fieldValidation
   Scenario: To Test field validations in add new customers page
